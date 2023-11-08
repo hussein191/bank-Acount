@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
+}
+body{
+    background-color: #dfdfdf;
+}
+
+/* Login page */
+
+.min_login{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 99999;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+}
+.login_cloes{
+    width:100%;
+    position: absolute;
+    top:7px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top:10px;
+    padding-right:20px;
+}
+.login_cloes i{
+    font-size:35px;
+    cursor: pointer;
+    color:#666;
+    transition: 0.3s ease;
+}
+.login_cloes i:hover{
+    color:#fff;
+}
+.box_login{
+    width:40%;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.titel_login{
+    width:100%;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.titel_login h2{
+    font-size:32px;
+    font-weight: 550;
+}
+.info_Login{
+    display:flex;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    flex-direction: column;
+}
+.MesgLogin{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width:100%;
+    background-color: rgba(223, 67, 67,0.4);
+    color:#fff;
+    padding:2px;
+}
+.info_Login label{
+    font-size:16px;
+    color:#666;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.info_Login input {
+    width:100%;
+    height:35px;
+    border-radius:5px;
+    outline:none;
+    padding:5px;
+    border:1px solid  rgba(102, 102, 102,0.2);
+    margin-bottom: 10px;
+}
+.bodybtu{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.EnterLogin{
+    width:40%;
+    height:35px;
+    border:none;
+    border-radius:10rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size:18px;
+    font-weight: 400;
+}
+.EnterLogin:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+
+/* Sing in page */
+
+.min_singin{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.min_singin .btu_cloes{
+    width:100%;
+    padding-top:10px;
+    padding-right:20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top:7px;
+}
+.min_singin .btu_cloes i{
+    font-size:35px;
+    cursor: pointer;
+    color:#666;
+    transition: 0.3s ease;
+}
+.min_singin .btu_cloes i:hover{
+    color:#fff
+}
+
+.box_singin{
+    width:40%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.titel{
+    width:100%;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.titel h2{
+    font-size:25px;
+    font-weight: 550;
+}
+.Singin{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.Singin .Mesg{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width:100%;
+    background-color: rgba(223, 67, 67,0.4);
+    color:#fff;
+    padding:2px;
+}
+
+.Singin label{
+    font-size:16px;
+    color:#666;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.Singin input {
+    width:100%;
+    height:35px;
+    border-radius:5px;
+    outline:none;
+    padding:5px;
+    border:1px solid  rgba(102, 102, 102,0.2);
+    margin-bottom: 10px;
+}
+.Singin .bodyDiv{
+    position: relative;
+}
+.Singin .bodyDiv i{
+    position: absolute;
+    right:5px;
+    top:4px;
+    color:#666;
+    cursor: pointer;
+}
+.Singin .bodyBtu{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.Singin .EnterInfo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:40%;
+    height:35px;
+    border-radius:10rem;
+    border:none;
+    outline:none;
+    font-size:18px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+.Singin .EnterInfo:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+
+/* A message to the user when ٍSinging in without entering information */
+
+.min_MessageS{
+    position: absolute;
+    z-index: 99999;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.box_MessageS{
+    width:40%;
+    padding:15px;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.box_MessageS h2{
+    font-size:20px;
+    color:#666;
+    font-weight: 500;
+}
+.box_MessageS i{
+    font-size:80px;
+    color:rgba(223, 67, 67,0.7)
+}
+.btu_singin{
+    width:130px;
+    height: 35px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+.btu_singin:hover{
+    color:#fff;
+    background-color: rgba(0, 128, 0,0.7);
+}
+
+/* Message confirming the user photo change */
+
+.minPhoto{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    z-index: 999999;
+    background-color: rgba(0,0,0,0.7);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+}
+.box-Photo{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    background-color: #fff;
+    border-radius:5px;
+}
+.AddPhoto{
+    width:90px;
+    height:90px;
+}
+.AddImge{
+    width:100%;
+    height:100%
+}
+.box-Photo h2{
+    font-size:20px;
+    font-weight: 450;
+    color:#666;
+}
+.StyleBtu{
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    column-gap: 13px;
+    justify-content: center;
+    align-items: center;
+}
+.CancelPhoto,.EnterPhoto{
+    width:20%;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    height:35px;
+    font-size:17px;
+    font-weight: 450;
+    transition: 0.3s ease;
+}
+.EnterPhoto:hover,.CancelPhoto:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+
+/* Message confirming the user Password change */
+.minPassword{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99999;
+    position: absolute;
+    top:0;
+    left:0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.box_Password{
+    width:40%;
+    background-color: #fff;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.box_Password h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:25px;
+    font-weight: 600;
+}
+.alertUser{
+    text-align:center;
+    padding:5px;
+    background-color: rgba(223, 67, 67,0.4);
+    color:#fff;
+    margin-bottom: 10px;
+    border-radius:5px;
+    display: none;
+}
+.box_Password input{
+    width:100%;
+    height:35px;
+    border:1px solid rgba(102, 102, 102,0.2);
+    border-radius:4px;
+    padding-left:4px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+.box_Password input:hover{
+    border:1px solid #1d1d1d
+}
+.box_Password label{
+    color:#666;
+    font-size:16px;
+}
+.Stylebtu{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+.CancelPassword,.EnterPassword{
+    width:25%;
+    height:35px;
+    border-radius: 4px;
+    border:none;
+    font-size: 18px;
+    font-weight: 550px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.EnterPassword:hover,.CancelPassword:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+/* Home page */
+
+header{
+    width:100%;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    padding-left:16px;
+    padding-right:16px;
+}
+.Logo i{
+    font-size:35px;
+}
+.Sing_in{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+.Logon_user,.Singi_user{
+    width:100px;
+    height:35px;
+    border-radius: 6px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-size:18px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.Singi_user:hover,.Logon_user:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+.profelUser{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    outline: 2px solid rgba(0, 128, 0,0.7);
+    margin-top: 5px;
+    padding:3px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+.profelUser img{
+    width:100%;
+    height:100%;
+    border-radius:50%
+}
+.infoProfil{
+    width:300px;
+    position: absolute;
+    top:70px;
+    right:0;
+    border-radius:5px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.profelUser:hover .infoProfil{
+    top:50px;
+    visibility: visible;
+    opacity: 1;
+}
+input[type="file"]{
+    display: none;
+}
+.StyleInput {
+    display: inline-block;
+    cursor: pointer;
+    color:#666;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+.StyleInput:hover{
+    text-decoration: underline;
+    color:#1d1d1d
+}
+.infoProfil div{
+    padding:7px;
+    border-bottom: 1px solid rgba(102, 102, 102,0.2);
+}
+.infoProfil h2{
+    font-size:16px;
+    font-weight: 500;
+}
+.infoProfil p {
+    color:#666;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+.infoProfil p:hover{
+    text-decoration: underline;
+    color:#1d1d1d
+}
+.Logout{
+    width:100px;
+    border:none;
+    background-color: transparent;
+    text-align: start;
+    cursor: pointer;
+    font-size:15px;
+    color:#666;
+    transition: 0.3s ease;
+}
+.Logout:hover{
+    text-decoration: underline;
+    color:#1d1d1d;
+}
+
+/******/
+.AcountUSer{
+    width:100%;
+    height:91vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxUser{
+    width:70%;
+}
+.infoAccount{
+    display:flex;
+    justify-content: space-between;
+    padding:5px;
+    align-items: center;
+}
+.timeOping h4{
+    font-size:16px;
+    font-weight: 550;
+}
+.timeOping p,.timeUser{
+    font-size:13px;
+    color:#666;
+}
+.MoneyUser{
+    font-size:23px;
+    font-weight: 600;
+}
+.infoUser{
+    width:100%;
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.box_left{
+    width:47%;
+    height:460px;
+    border-radius:5px;
+    background-color: #fff;
+    overflow-y: auto;
+    padding-bottom:20px;
+}
+.bodyElment{
+    width:100%;
+}
+.titel_Condition{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-bottom: 1px solid rgba(102, 102, 102,0.2);
+}
+.titelUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 13px;
+}
+.Condition{
+    border-radius:10rem;
+    padding:12px;
+    font-size: 15px;
+}
+
+.time{
+    color:#666;
+    font-size:14px;
+}
+.blanc{
+    font-size:20px;
+    font-weight: 550;
+}
+
+
+
+/* box right for elemnts */
+
+.box_right{
+    width:47%;
+}
+.transfer,.Request,.CloseAcount{
+    width:100%;
+    background-color: rgb(215, 171, 88);
+    padding:20px;
+    border-radius:5px;
+    margin-bottom: 15px;
+}
+.transfer h2,.Request h2,.CloseAcount h2{
+    font-size:20px;
+    font-weight: 600;
+}
+.box_transfer,.box_Request,.box_CloseAcount{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    column-gap: 10px;
+}
+.box_Amounttransfer,.transfer_to,.box_password,.box_cloes{
+    width:47%
+}
+.box_transfer p,.Request_to p,.box_cloes p ,.box_password p{
+    text-align: center;
+    padding-top: 5px;
+    color:#666;
+}
+.Amount_transfer,.name_transfer,.Amount_Request,.User_cloes,.Password_cloes{
+    width:100%;
+    height:35px;
+    border-radius:7px;
+    padding:3px;
+    padding-left:7px;
+    border:none;
+    outline: none;
+}
+.InputTransfer,.iconInput{
+    width:60px;
+    height:35px;
+    display:flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius:5px;
+    outline: none;
+    border:none;
+}
+.InputTransfer i,.iconInput i{
+    font-size:25px;
+    cursor: pointer;
+}
+.Request{
+    background-color: rgba(0, 128, 0,0.7);
+}
+.box_Request{
+    justify-content: flex-start;
+}
+.Request_to{
+    width:40%;
+}
+.CloseAcount{
+    background-color: rgba(223, 67, 67,0.7);
+    margin-bottom: 0;
+}
+
+/* Sending confirmation message */
+.minSend{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.box_send{
+    width:40%;
+    padding:20px;
+    background-color: #fff;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+.box_send p{
+    color:#666;
+}
+.StyleB{
+    display: flex;
+    column-gap: 7px;
+}
+.box_send button{
+    width:120px;
+    height:35px;
+    border:none;
+    border-radius:10rem;
+    font-size:18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.box_send button:hover{
+    background-color: rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+.bodyS{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left:20px;
+    padding-bottom: 10px;
+}
+.bodyS p{
+    text-align: center;
+}
+.bodyS h2{
+    font-size:16px;
+    font-weight: 400;
+}
+.bodyS span{
+    font-size:20px;
+    font-weight: 600;
+    color:rgba(0, 0, 255,0.5);
+}
+/* If the card number entered is incorrect */
+.minIncorrect{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.7);
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.boxIncorrect{
+    width:40%;
+    background-color: #fff;
+    border-radius:5px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.boxIncorrect h2{
+    font-size:20px;
+    color:#1d1d1d;
+    font-weight: 600;
+}
+.boxIncorrect button{
+    width:120px;
+    height:35px;
+    border:none;
+    border-radius: 5px;
+    font-size:18px;
+    font-weight: 450;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+.boxIncorrect button:hover{
+    background-color: rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+
+/* Request Loan confirmation message */
+
+.minRequest{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+}
+.boxrequest{
+    width:40%;
+    border-radius:5px;
+    background-color: #fff;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.boxrequest h1{
+    font-size:19px;
+    font-weight: 600;
+    color:#666;
+}
+.boxrequest h2{
+    font-size:20px;
+    font-weight: 600;
+    color:#1d1d1d;
+}
+.RequestLoan{
+    font-size:20px;
+    font-weight: 500;
+    color:rgba(0, 0, 255,0.5)
+}
+.boxrequest button{
+    width:90px;
+    height:35px;
+    border:none;
+    border-radius:4px;
+    font-size: 18px;
+    font-weight: 450;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.boxrequest button:hover{
+    color:#fff;
+    background-color: rgba(0, 0, 255,0.5);
+}
+
+/* A message confirming that the user has deleted his account */
+.minDelet{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    left:0;
+    z-index: 99999;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.box_Delet{
+    width:40%;
+    background-color: #fff;
+    border-radius:5px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.box_Delet h1{
+    font-size:20px;
+    color:#1d1d1d;
+    font-weight: 600;
+}
+.StyleDe{
+    display: flex;
+    column-gap: 8px;
+}
+.box_Delet button{
+    width:90px;
+    height:35px;
+    border:none;
+    border-radius:4px;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.box_Delet button:hover{
+    background-color: rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+
+.bodtTime{
+    display: flex;
+    column-gap: 5px;
+}
+
+/*  responsive   */
+
+@media (max-width:1070px) {
+    .box_right p{
+        font-size: 14px;
+    }
+    .boxUser{
+        width:85%;
+    }
+}
+
+@media (max-width:960px) {
+    .boxUser{
+        width:90%;
+    }
+}
+@media (max-width:895px) {
+    .box_right p{
+        font-size: 12px;
+    }
+}
+@media (max-width:725px) {
+    .boxUser{
+        margin-top: 390px;
+        padding-bottom: 40px;
+    }
+    .infoUser{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .box_left,.box_right{
+        width:100%;
+    }
+    .box_login,.box_singin,.box_Password,.box-Photo,.box_send,.boxIncorrect,.boxrequest,
+    .box_Delet{
+        width:85%
+    }
+}
+@media (max-width:435px) {
+    .infoAccount{
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .Logon_user,.Singi_user{
+        width:80px;
+        font-size:17px;
+        font-weight: 550;
+    }
+    .CancelPhoto,.EnterPhoto,.CancelPassword,.EnterPassword{
+        width:80px;
+    }
+}
+@media (max-width:375px) {
+    .box_left h2{
+        font-size:15px;
+    }
+    .box_left p{
+        font-size:13px;
+    }
+    .boxUser{
+        margin-top: 520px;
+    }
+}

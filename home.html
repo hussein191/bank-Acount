@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecoshop</title>
+        <!--Google Font-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--Stylesheet-->
+        <script src="https://kit.fontawesome.com/d6f4927337.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <!--Log in page-->
+    <div class="min_login">
+        <div class="login_cloes">
+            <i class="uil uil-times" id="login_cloes"></i>
+        </div>
+        <div class="box_login">
+            <div class="titel_login">
+                <h2>Login in</h2>
+            </div>
+            <form class="info_Login" accept="">
+                <div class="MesgLogin"></div>
+                <label>Name</label>
+                <input class="NameLogin" type="name" placeholder="Enter your name">
+                <label>Password</label>
+                <input class="PasswordLogin" type="password" placeholder="Enter your password">
+                <div class="bodybtu">
+                    <button class="EnterLogin">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Sing in page-->
+    <div class="min_singin">
+        <div class="btu_cloes">
+            <i class="uil uil-times" id="Cloes_Singin"></i>
+        </div>
+        <div class="box_singin">
+            <div class="titel">
+                <h2>Sing in</h2>
+            </div>
+            <form class="Singin" accept="">
+                <div class="Mesg"></div>
+                <label>Name</label>
+                <input class="Name" type="name" placeholder="Enter your naem">
+                <label>Number Card</label>
+                <input class="NumberCard" type="number" placeholder="Enter number card">
+                <label>Email</label>
+                <input class="email" type="email" placeholder="Enter your email">
+                <label>Password</label>
+                <div class="bodyDiv">
+                    <input class="Password" type="password" placeholder="Enter your password">
+                    <i class="uil uil-asterisk"></i>
+                </div>
+                <div class="bodyBtu">
+                    <button class="EnterInfo">Sing in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--A message to the user when ٍSinging in without entering information-->
+    <div class="min_MessageS">
+        <div class="box_MessageS">
+            <h2>You must enter the information first...</h2>
+            <i class="uil uil-exclamation-triangle"></i>
+            <button class="btu_singin">OK!</button>
+        </div>
+    </div>
+    <!--Message confirming the user photo change-->
+    <div class="minPhoto">
+        <form accept="" class="box-Photo">
+            <div class="AddPhoto">
+                <img class="AddImge" src ="#" alt="">
+            </div>
+            <h2>Confirm adding the image..</h2>
+            <div class="StyleBtu">
+                <button class="EnterPhoto">OK!</button>
+                <button class="CancelPhoto">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <!--Message confirming the user Password change-->
+    <div class="minPassword">
+        <form accept="" class="box_Password">
+            <h2>change the password</h2>
+            <p class="alertUser"></p>
+            <label>Old Password</label>
+            <input class="OldPassword" type="password" placeholder="Enter old password">
+            <label>New Password</label>
+            <input class="NewPassword" type="password" placeholder="Enter New password">
+            <div class="Stylebtu">
+                <button class="EnterPassword">OK!</button>
+                <button class="CancelPassword">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <!--Home page-->
+    <header>
+        <div class="Logo">
+            <i class="uil uil-university"></i>
+        </div>
+        <div class="Sing_in">
+            <button class="Singi_user">Sing in</button>
+            <button class="Logon_user">Login</button>
+            <div class="profelUser">
+                <img class="PhotoUser" src="" alt="">
+                <form accept="" class="infoProfil">
+                    <div><h2>name  : <span class="nameProfil"></span></h2></div>
+                    <div><h2>Email : <span class="emailProfil"></span></h2></div>
+                    <div><h2 >Number card : <span class="numberCard"></span></h2></div>
+                    <div>
+                        <label  class="StyleInput">
+                            <input id="imgeUser"  type="file" multiple accept="image/*">
+                            change Photo
+                        </label>
+                        <p class="ChengPassword">change Password</p>
+                        <button class="Logout">Logout</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="AcountUSer">
+        <div class="boxUser">
+            <div class="infoAccount">
+                <div class="timeOping">
+                    <h4>Current balance</h4>
+                    <div class="bodtTime">
+                        <p class="DateTime"></p>
+                        <span class="timeUser"></span>
+                    </div>
+                </div>
+                <div class="MoneyUser"></div>
+            </div>
+            <div class="infoUser">
+                <div class="box_left"></div>
+                <div class="box_right">
+                    <!--box Transfer-->
+                    <div class="transfer">
+                        <h2>Transfer money</h2>
+                        <div class="box_transfer">
+                            <div class="transfer_to">
+                                <input class="name_transfer" type="name">
+                                <p>transfer to</p>
+                            </div>
+                            <div class="box_Amounttransfer">
+                                <input class="Amount_transfer" type="number">
+                                <p>Amount</p>
+                            </div>
+                            <button class="InputTransfer">
+                                <i class="uil uil-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--Sending confirmation message-->
+                        <div class="minSend">
+                            <form class="box_send">
+                                <div class="bodyS">
+                                    <p>Confirm sending!</p>
+                                    <h2 class="nameS">Name : <span class="nameSender"></span></h2>
+                                    <h2 class="NumberS">Number Cart : <span class="CustomerCard"></span></h2>
+                                    <h2 class="AmountS">Amount : <span class="AmountTransferred"></span></h2>
+                                </div>
+                                <div class="StyleB">
+                                    <button class="EnterSent">Ok!</button>
+                                    <button class="CancelTransfer">Cansel</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--If the card number entered is incorrect-->
+                        <div class="minIncorrect">
+                            <div class="boxIncorrect">
+                                <h2>The card number entered incorrectly</h2>
+                                <button class="incorrectBtu">OK!</buuton>
+                            </div>
+                        </div>
+                    <!--box Request-->
+                    <div class="Request">
+                        <h2>Request loan</h2>
+                        <div class="box_Request">
+                            <div class="Request_to">
+                                <input class="Amount_Request" type="number">
+                                <p>Amount</p>
+                            </div>
+                            <div class="iconInput">
+                                <i class="uil uil-arrow-right" id="Request"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Request Loan confirmation message-->
+                    <div class="minRequest">
+                        <form class="boxrequest">
+                            <h1>Confirmation</h1>
+                            <h2>Amount : <span class="RequestLoan"></span></h2>
+                            <button class="EnterRequest">OK!</button>
+                        </form>
+                    </div>
+                    <!--For cloes Acount User-->
+                    <div class="CloseAcount">
+                        <h2>Close Acount</h2>
+                        <div class="box_CloseAcount">
+                            <div class="box_cloes">
+                                <input class="User_cloes" type="name">
+                                <p>Confirm User</p>
+                            </div>
+                            <div class="box_password">
+                                <input class="Password_cloes" type="password">
+                                <p>Confirm Password</p>
+                            </div>
+                            <div class="iconInput Cloesacount">
+                                <i class="uil uil-arrow-right" ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--A message confirming that the user has deleted his account-->
+                    <div class="minDelet">
+                        <form class="box_Delet">
+                            <h1>Are you sure you want to delete the account?</h1>
+                            <div class="StyleDe">
+                                <button class="EnterDelete">OK!</button>
+                                <button>Cansel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Singin.js"></script>
+    <script src="./Login.js"></script>
+    <script src="./AcountUser.js"></script>
+    </body>
+</html>
